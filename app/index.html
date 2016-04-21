@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Baymax</title>
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="baymax">
+            <div class="head">
+                <div class="eye-left">
+                    <div class="eye">
+                    </div>
+                </div>
+                <div class="eye-line"></div>
+                <div class="eye-right">
+                    <div class="eye">
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="menu" onclick="baymax.showMenu()">
+                    <svg width="30" height="30">
+                        <polyline points="0,15 8,15 8,10 22,10 22,15 30,15" style="fill:white;stroke:black;stroke-width:1" />
+                    </svg>
+                </div>
+                <div class="menu-list">
+                    <button onclick="baymax.setState('blink')">blink</button>
+                    <button onclick="baymax.setState('smile')">smile</button>
+                    <button onclick="baymax.setState('wonder')">wonder</button>
+                    <button onclick="baymax.setState('greed')">greed</button>
+                    <button onclick="baymax.setState('angry')">angry</button>
+                    <button onclick="baymax.setState('normal')">normal</button>
+                </div>
+            </div>
+            <div class="arm-left">
+                <div class="arm">
+                    <div class="hand-left">
+                        <div class="hand-left1"></div>
+                        <div class="hand-left2"></div>
+                        <div class="hand-left3"></div>
+                        <div class="hand-left4"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="arm-right">
+                <div class="arm">
+                    <div class="hand-right">
+                        <div class="hand-right4"></div>
+                        <div class="hand-right3"></div>
+                        <div class="hand-right2"></div>
+                        <div class="hand-right1"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="foot-left"></div>
+            <div class="foot-right"></div>
+        </div>
+    </div>
+    <script src="js/baymax.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

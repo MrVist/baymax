@@ -1,0 +1,346 @@
+.container {
+    width: 500px;
+    height: 600px;
+    margin: auto;
+    background: #ccc;
+}
+
+.baymax {
+    position: relative;
+    width: 500px;
+    height: 600px;
+}
+
+.baymax .head {
+    position: relative;
+    left: 180px;
+    top: 40px;
+    width: 150px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 2px 2px 2px;
+    z-index: 101;
+}
+
+.baymax .head.wonder {
+    animation: wonder-move 1s ease 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wonder-move {
+    0% {
+        top: 40px;
+        transform: rotateZ(0deg);
+    }
+    100% {
+        top: 45px;
+        transform: rotateZ(-10deg);
+    }
+}
+
+.baymax .eye-left {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.baymax .eye-right {
+    position: absolute;
+    top: 30px;
+    left: 100px;
+}
+
+.baymax .eye {
+    position: relative;
+    top: 5px;
+    width: 10px;
+    height: 15px;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background: #000;
+    color: #fff;
+}
+
+.baymax .eye.blink {
+    animation: blink-move 0.5s ease alternate infinite;
+}
+
+@keyframes blink-move {
+    0% {
+        top: 5px;
+        height: 15px;
+    }
+    100% {
+        top: 12px;
+        height: 0px;
+    }
+}
+
+.baymax .eye.smile {
+    animation: smile-move 1s ease 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes smile-move {
+    0% {
+        border-bottom: 5px solid #000;
+        background: #000;
+    }
+    100% {
+        border-bottom: 5px solid transparent;
+        background: transparent;
+    }
+}
+
+.baymax .eye.greed {
+    animation: greed-move 0.5s ease alternate infinite;
+}
+
+@keyframes greed-move {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.baymax .eye.angry {
+    animation: angry-move 1s ease 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes angry-move {
+    0% {
+        height: 15px;
+        border-radius: 50%;
+    }
+    100% {
+        height: 0;
+        border-radius: 10%;
+    }
+}
+
+.baymax .eye-line {
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    width: 60px;
+    height: 5px;
+    border: none;
+    background: #000;
+}
+
+.baymax .body {
+    position: relative;
+    top: 5px;
+    left: 105px;
+    width: 300px;
+    height: 350px;
+    border: 1px solid #aaa;
+    border-left: none;
+    border-right: none;
+    border-radius: 60% 60% 50% 50%;
+    background: #fff;
+    box-shadow: 2px 2px 2px;
+    z-index: 100;
+}
+
+.baymax .body .menu {
+    position: absolute;
+    top: 50px;
+    left: 200px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.baymax .body .menu:hover {
+    background: #79AF14;
+}
+
+.baymax .body .menu:active {
+    background: #126F15;
+}
+
+.baymax .body .menu-list {
+    position: absolute;
+    top: 90px;
+    left: 75px;
+    width: 150px;
+    height: 100px;
+    background: #ccc;
+    border-radius: 3px;
+    display: none;
+    animation: menu-list-move 1s ease 0s 1;
+}
+
+@keyframes menu-list-move {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.baymax .body .menu-list button {
+    width: 60px;
+    height: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 20px;
+    font-family: cursive;
+    background: #1A8ECE;
+    cursor: pointer;
+}
+
+.baymax .body .menu-list button:hover {
+    background: #18A1D2;
+}
+
+.baymax .body .menu-list button:active {
+    background: #136582;
+}
+
+.baymax .arm-left {
+    position: absolute;
+    top: 150px;
+    left: 80px;
+    transform: rotateZ(25deg);
+}
+
+.baymax .arm-right {
+    position: absolute;
+    top: 150px;
+    left: 360px;
+    transform: rotateZ(-25deg);
+}
+
+.baymax .arm {
+    width: 70px;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 80% 80% 30% 30%;
+    background: #fff;
+    box-shadow: 2px 2px 2px;
+}
+
+.baymax .hand-left {
+    position: relative;
+    top: 190px;
+    left: 9px;
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    z-index: 101;
+}
+
+.baymax .hand-left1 {
+    width: 14px;
+    height: 25px;
+    border-radius: 0 0 70% 70%;
+    background: #fff;
+    float: left;
+    transform: rotateZ(-20deg);
+}
+
+.baymax .hand-left2 {
+    width: 13px;
+    height: 30px;
+    border-radius: 0 0 50% 50%;
+    background: #fff;
+    float: left;
+}
+
+.baymax .hand-left3 {
+    width: 13px;
+    height: 30px;
+    border-radius: 0 0 50% 50%;
+    background: #fff;
+    float: left;
+}
+
+.baymax .hand-left4 {
+    width: 13px;
+    height: 28px;
+    border-radius: 0 0 50% 50%;
+    background: #fff;
+    float: left;
+    transform: rotateZ(10deg);
+}
+
+.baymax .hand-right {
+    position: relative;
+    top: 190px;
+    left: 8px;
+    width: 70px;
+    height: 30px;
+    background: transparent;
+    z-index: 101;
+}
+
+.baymax .hand-right1 {
+    width: 14px;
+    height: 25px;
+    border-radius: 0 0 70% 70%;
+    background: #fff;
+    float: left;
+    transform: rotateZ(20deg);
+}
+
+.baymax .hand-right2 {
+    width: 13px;
+    height: 30px;
+    border-radius: 0 0 50% 50%;
+    background: #fff;
+    float: left;
+}
+
+.baymax .hand-right3 {
+    width: 13px;
+    height: 30px;
+    border-radius: 0 0 50% 50%;
+    background: #fff;
+    float: left;
+}
+
+.baymax .hand-right4 {
+    width: 13px;
+    height: 28px;
+    border-radius: 0 0 50% 50%;
+    background: #fff;
+    float: left;
+    transform: rotateZ(-10deg);
+}
+
+.baymax .foot-left {
+    position: relative;
+    top: -20px;
+    left: 180px;
+    width: 60px;
+    height: 70px;
+    border: none;
+    border-radius: 40%;
+    background: #fff;
+    box-shadow: 1px 1px 1px;
+    float: left;
+}
+
+.baymax .foot-right {
+    position: relative;
+    top: -20px;
+    left: 210px;
+    width: 60px;
+    height: 70px;
+    border: none;
+    border-radius: 40%;
+    background: #fff;
+    box-shadow: 1px 1px 1px;
+    float: left;
+}
